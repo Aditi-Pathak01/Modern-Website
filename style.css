@@ -299,7 +299,12 @@ nav a:hover {
 #plans {
   height: 60vh;
   width: 100vw;
-  background: linear-gradient(180deg,rgba(249,33,141,.8)0%,rgba(110,25,246,0.8)100%),url(assets/best_pricingbg.jpg.webp);
+  background: linear-gradient(
+      180deg,
+      rgba(249, 33, 141, 0.8) 0%,
+      rgba(110, 25, 246, 0.8) 100%
+    ),
+    url(assets/best_pricingbg.jpg.webp);
   position: relative;
   padding-bottom: 10rem;
 }
@@ -326,7 +331,7 @@ nav a:hover {
   width: 320px;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 #upper-box {
@@ -335,8 +340,8 @@ nav a:hover {
   padding: 2rem;
 }
 #upper-box span {
- font-size: 2rem;
- color: #555;
+  font-size: 2rem;
+  color: #555;
 }
 #upper-box h1 {
   font-size: 2rem;
@@ -353,7 +358,7 @@ nav a:hover {
 #lower-box ul li {
   margin-bottom: 0.8rem;
 }
-#lower-box ul button{
+#lower-box ul button {
   color: white;
   border: 0;
   outline: 0;
@@ -369,7 +374,11 @@ nav a:hover {
   margin-top: 260px;
   padding: 1rem 5rem;
   height: 100vh;
-  background-image: linear-gradient(360deg, rgb(165, 5, 189),rgb(239, 87, 203));
+  background-image: linear-gradient(
+    360deg,
+    rgb(165, 5, 189),
+    rgb(239, 87, 203)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -386,9 +395,9 @@ nav a:hover {
   margin-bottom: 3rem;
 }
 #p-text p {
- color: white;
- font-size: 14px;
- margin-bottom: 3rem;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 3rem;
 }
 .logo-sec {
   display: flex;
@@ -412,12 +421,12 @@ nav a:hover {
 .contact-us img {
   position: absolute;
   bottom: -150px;
-  left:-120px;
+  left: -120px;
   animation: rotate 10s linear infinite;
 }
 @keyframes rotate {
   from {
-  transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
@@ -437,29 +446,26 @@ nav a:hover {
   border-radius: 10px;
   background-color: rgb(208, 80, 123);
   color: whitesmoke;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   font-size: 1.3rem;
   cursor: pointer;
   margin-top: 140px;
 }
 #footer {
   padding: 3rem;
-  height: 63vh;
-  border: 1px solid black;
+  height: 50vh;
   display: flex;
   justify-content: space-evenly;
   align-items: start;
 }
-#footer div{
+#footer div {
   flex-basis: 20%;
   gap: 2rem;
-}
-#footer img {
-  margin-bottom: 1.5rem;
 }
 #footer p {
   color: #777;
   font-size: 14px;
+  margin-top: 1.5rem;
 }
 #footer h1 {
   font-size: 1.8rem;
@@ -471,24 +477,53 @@ nav a:hover {
 }
 #footer ul li {
   margin-bottom: 1rem;
+  transition: all 0.3s;
 }
-#footer ul li  a {
+#footer ul li a {
   text-decoration: none;
+  width: 100%;
   color: #777;
 }
-.input-field {
-  margin-top: 1rem;
-  background-color: black;
+#footer ul li:hover {
+  transform: translateX(20px);
+}
+#footer ul li:hover a {
+  color: #723ba2;
+}
+.input-box {
+  width: 350px;
+  height: 60px;
   padding: 1rem;
-  border-radius: 8px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
 }
 .input {
- border: 0;
- outline: 0;
- background-color: transparent;
- color: white;
- font-size: 1rem;
+  background: transparent;
+  color: whitesmoke;
+  padding: 10px;
+  border: none;
+  outline: none;
+  flex: 1;
 }
 .input::placeholder {
+  font-size: 1rem;
   color: white;
+}
+.input-box .email-btn{
+  padding: 5px 8px;
+ border-radius: 50%;
+ border: 0;
+ outline: 0;
+ background-color: #450b78;
+}
+.email-btn img {
+  height: 20px;
+  width: 20px;
+  margin-top: 2px;
 }
