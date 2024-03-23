@@ -29,6 +29,9 @@ nav {
   z-index: 2;
   background-color: rgb(171, 211, 215);
 }
+nav img {
+  cursor: pointer;
+}
 nav ul {
   list-style-type: none;
   font-size: 1.1rem;
@@ -205,7 +208,7 @@ nav a:hover {
 #service {
   height: 90vh;
   width: 100%;
-  padding: 1rem 9rem;
+  padding: 5rem 9rem;
 }
 #service h1 {
   text-align: center;
@@ -404,6 +407,9 @@ nav a:hover {
   justify-content: start;
   align-items: center;
   gap: 1rem;
+}
+.logo-sec img {
+  height: 50px;
 }
 #contact {
   height: 50vh;
