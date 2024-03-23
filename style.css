@@ -176,10 +176,15 @@ nav a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-.f-img div {
+.f-img {
   height: 70px;
   width: 70px;
   border-radius: 50%;
+}
+.f-img div {
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
