@@ -430,6 +430,7 @@ nav a:hover {
 }
 .logo-sec img {
   height: 50px;
+  cursor: pointer;
 }
 #contact {
   height: 50vh;
@@ -488,6 +489,9 @@ nav a:hover {
   flex-basis: 20%;
   gap: 2rem;
 }
+#footer img {
+  cursor: pointer;
+}
 #footer p {
   color: #777;
   font-size: 14px;
@@ -503,7 +507,7 @@ nav a:hover {
 }
 #footer ul li {
   margin-bottom: 1rem;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 #footer ul li a {
   text-decoration: none;
@@ -547,6 +551,7 @@ nav a:hover {
  border: 0;
  outline: 0;
  background-color: #450b78;
+ cursor: pointer;
 }
 .email-btn img {
   height: 20px;
