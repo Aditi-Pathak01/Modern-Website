@@ -11,23 +11,27 @@
 body,
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 #landing-page {
   height: 100vh;
   width: 100%;
-  background-color: #f4feff;
 }
 nav {
   height: 70px;
+  width: 100%;
   padding: 1rem 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   right: 0;
-  z-index: 2;
-  background-color: rgb(171, 211, 215);
+  z-index: 100;
+}
+.scroll {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255,255,255,0.5)
 }
 nav img {
   cursor: pointer;
@@ -112,6 +116,22 @@ nav a:hover {
   align-items: start;
   padding: 6rem 5rem;
   background-color: #fcfbef;
+  border: 1px solid black;
+}
+.back-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right:2rem;
+  height: 30px;
+  width: 30px;
+  background-color: palevioletred;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 3;
+  display: none;
 }
 #f-left {
   flex: 1;
